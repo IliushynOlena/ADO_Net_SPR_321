@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_ConnectedMode", "01_ConnectedMode\01_ConnectedMode.csproj", "{7AB19CB0-5589-4474-8E8A-E24A34718AE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CRUD_Interface", "02_CRUD_Interface\02_CRUD_Interface.csproj", "{E84FF000-7535-4CE8-B30A-BC66035985D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AB19CB0-5589-4474-8E8A-E24A34718AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB19CB0-5589-4474-8E8A-E24A34718AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB19CB0-5589-4474-8E8A-E24A34718AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB19CB0-5589-4474-8E8A-E24A34718AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84FF000-7535-4CE8-B30A-BC66035985D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84FF000-7535-4CE8-B30A-BC66035985D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84FF000-7535-4CE8-B30A-BC66035985D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84FF000-7535-4CE8-B30A-BC66035985D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C30B944-780B-49DE-98A6-E622641B1908}
+	EndGlobalSection
+EndGlobal
