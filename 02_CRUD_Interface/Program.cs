@@ -16,10 +16,18 @@ namespace _02_CRUD_Interface
         private string connectionString;
         public SportShopDb()
         {
-            connectionString = @"Data Source = DESKTOP-1LCG8OH\SQLEXPRESS;
-                                 Initial Catalog= SportShop;
-                                 Integrated Security=true;
-                                 Connect Timeout = 2;";
+            //connectionString = @"Data Source = DESKTOP-1LCG8OH\SQLEXPRESS;
+            //                     Initial Catalog= SportShop;
+            //                     Integrated Security=true;
+            //                     Connect Timeout = 2;";
+            connectionString = @"workstation id=ShopDb123456.mssql.somee.com;
+                                packet size=4096;
+                                user id=helen_iliushyn_SQLLogin_1;
+                                pwd=hi9ub29ivw;
+                                data source=ShopDb123456.mssql.somee.com;
+                                persist security info=False;
+                                initial catalog=ShopDb123456;
+                                TrustServerCertificate=True";
             connection = new SqlConnection(connectionString);
             connection.Open();
         }
