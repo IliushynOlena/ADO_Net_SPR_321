@@ -155,6 +155,7 @@ namespace _02_CRUD_Interface
             Console.WriteLine();
             Product item = db.GetById(8);
             Console.WriteLine(item);
+          
             item.Price += 150;
             item.CostPrice += 200;
             db.Update(item);
