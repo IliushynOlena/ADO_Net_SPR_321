@@ -1,4 +1,5 @@
 ﻿using _03_EntityFramework.Entities;
+using _03_EntityFramework.Helpers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -72,60 +73,15 @@ namespace _03_EntityFramework
             modelBuilder.Entity<Flight>()
                 .HasOne(f=> f.Airplane)
                 .WithMany(a => a.Flights)
-                .HasForeignKey(f=> f.AirplaneId);  
+                .HasForeignKey(f=> f.AirplaneId);
 
 
 
             //Initialization - Seeder
-            modelBuilder.Entity<Airplane>().HasData(
-               new Airplane[]
-               {
-                    new Airplane()
-                    {
-                        Id = 1,
-                        Name = "Boeing 747", 
-                        MaxPassengers = 1200
-                    },
-                    new Airplane()
-                    {
-                        Id = 2,
-                        Name = "Boeing 765",
-                        MaxPassengers = 500
-                    }
-               });
-            modelBuilder.Entity<Flight>().HasData((
-                new Flight[]
-                {
-                    new Flight()
-                    {
-                         Number = 1,
-                         DepartureTime = new DateTime(2024,08,24),
-                         ArrivalTime  = new DateTime(2024,08,24),
-                         DepartureCity = "Rivne",
-                         ArrivalCity = "Lviv",
-                          AirplaneId = 1
-
-                    },
-                     new Flight()
-                    {
-                         Number = 2,
-                         DepartureTime = new DateTime(2024,09,24),
-                         ArrivalTime  = new DateTime(2024,09,24),
-                         DepartureCity = "Odessa",
-                         ArrivalCity = "Lviv",
-                          AirplaneId = 2
-                    },
-                      new Flight()
-                    {
-                         Number = 3,
-                         DepartureTime = new DateTime(2024,12,24),
-                         ArrivalTime  = new DateTime(2024,12,24),
-                         DepartureCity = "Kyiv",
-                         ArrivalCity = "Lviv",
-                          AirplaneId = 1
-
-                    }
-                }));
+            modelBuilder.SeedAirplanes();
+            modelBuilder.SeedFlight();
+          
+          
         }
 
 
