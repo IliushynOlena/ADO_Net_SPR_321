@@ -13,6 +13,6 @@ namespace _03_EntityFramework.Entities
         public DateTime? Birthdate { get; set; }
 
         //Navigation properties
-        public ICollection<Flight> Flights { get; set; }
+        public ICollection<Flight> Flights{ get; set; }
     }
 }
